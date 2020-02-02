@@ -11,6 +11,8 @@
 	<script src="https://kit.fontawesome.com/62d9fb1508.js" crossorigin="Lucas"></script>
 	<script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
 	<script type='text/javascript' src='js/menu.js'></script>
+	<script type='text/javascript' src='js/validar_form.js'></script>
+	<link rel='stylesheet' id='bootstrap-css' href='bootstrap-4/css/bootstrap.css' type='text/css' media='all'/>
 
 </head>
 
@@ -51,7 +53,40 @@
 	</ul>
 </div>
 <body>
-	<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+	<section id="formulario">
+		<div class="box">
+			<h2 class="titulo">Inscrição de matéria</h2>
+			<form name="fvalida">
+				<div class="row">
+					<div class="col-6">
+						<label for="nome">Nome*:</label>
+						<input id="nome" name="nome" type="text" placeholder="Nome da matéria">
+					</div>
+					<div class="col-6">
+						<label for="requisito">Requisitos:</label>
+						<input id="requisitos" name="requisitos" placeholder="Requisitos para o curso"></textarea>
+					</div>
+					<div class="col-6">
+						<label for="ementa">Ementa:</label>
+						<textarea rows="2" cols="30" id="ementa" name="ementa" placeholder="Ementa do curso"></textarea>
+					</div>
+					<div class="col-6">
+						<label for="carga_horaria">Carga horária:</label>
+						<input id="carga_horaria" name="carga_horaria" placeholder="Carga horária, em horas"></input>
+					</div>
+					<div class="col-6">
+						<label for="preco">Preço:</label>
+						<input id="preco" name="preco" placeholder="Preço do curso"></input>
+					</div>
+					<div class="col-6">
+						<button type="submit" name="enviar" onclick="valida_enviar()"><p>Enviar</p></button>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+	</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
 </body>
 <footer>
 
