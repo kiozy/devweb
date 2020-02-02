@@ -3,15 +3,38 @@ html, body, div, section, a, p, h1, h2, h3, h4, img, ul, li{
     padding: 0;
 }
 
-@media(min-width: 1201px) {
-    header .box {
-        max-width: 95% !important;
-    }
+form{
+    margin-block-end:0px ;
+}
+
+*, *::before, *::after{
+    box-sizing: inherit;
 }
 
 .clear::after, .clear::before{
     content: "";
     clear: both;
+    /* display: table; */
+}
+
+.box{
+    margin: 0 auto;
+    max-width: 1060px;
+}
+
+.block {
+    display: block;
+}
+
+.ativo{
+    opacity: 1 !important;
+}
+
+
+@media(min-width: 1201px) {
+    header .box {
+        max-width: 95% !important;
+    }
 }
 
 header{
@@ -42,9 +65,47 @@ header .box {
     padding: 0px 10px;
 }
 
-head .box a:hover {
-    color: #000;
+.row-nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
+
+.barra{
+    position: fixed;
+    width: 100%;
+    transition: 0.3s;
+    background-color: rgba(15,15,15,.9);
+    height: 108px;
+    z-index: 90;
+    opacity: 0;
+}
+
+.barra.ativo{
+    background-color: rgba(15,15,15,.9);
+}
+
+.opcoes.ativo i{
+    color: #7d7d7d;
+}
+
+header img{
+    opacity: 1;
+}
+
+.html-home header img {
+    opacity: 0;
+}
+
+header.ativo img{
+    opacity: 1;
+}
+
+header.ativo .blue-bg{
+    opacity: 1;
+}
+
 
 .hamburguer-bt {
     cursor: pointer;
@@ -87,35 +148,6 @@ head .box a:hover {
     transform: rotate(-45deg) translate(4px, -4px);
 }
 
-.barra{
-    position: fixed;
-    width: 100%;
-    transition: 0.3s;
-    background-color: rgba(15,15,15,.9);
-    height: 70px;
-    z-index: 90;
-    opacity: 0;
-}
-
-.barra.ativo{
-    background-color: rgba(15,15,15,.9);
-}
-
-.box {
-    width: 1200px;
-    margin: 0 auto;
-    display: flex;
-    align-items: center;
-	margin: 0 auto;
-    max-width: 1060px;
-}
-
-.row-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
 
 .menu{
     background-color: #fff;
@@ -125,7 +157,7 @@ head .box a:hover {
     padding-top: 100px;
     transition: 0.6s;
     height: 100%;
-    min-width: 270px;
+    min-width: 235px;
 }
 
 .menu ul{
@@ -166,19 +198,17 @@ head .box a:hover {
 
 .menu ul li:after{
     content: "";
-    height: 15px;
+    height: 8px;
     z-index: -1;
     width: 100%;
     position: relative;
-    top: -17;
+    top: -12;
     display: block;
 }
 
 .menu ul li:hover:after{
     background-color: #23ade0;
 }
-
-/* 1.2 Responsivo do header */
 
 @media (max-width: 960px){
     header img{
@@ -196,9 +226,9 @@ head .box a:hover {
     }
 }
 
-
-.opcoes.ativo i{
-    color: #7d7d7d;
+html, body{
+    width: 100%;
+    height: 100%;
 }
 
 body {
@@ -210,6 +240,14 @@ body {
     background-size: cover;
 }
 
-/* .menu ul li:hover:after{
-    background-color: #23ade0;
-} */
+
+#principal{
+    height:100vh;
+}
+
+#principal .box {
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
