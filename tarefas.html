@@ -1,0 +1,93 @@
+<html lang="pt" class='html-home'>
+<head>
+	<title> Desenvolvimento Web </title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+    <link rel="icon" href="img/uff.jpg">
+    <link rel='stylesheet' id='style-css' href='style.css' type='text/css' media='all'/>
+	<link href="https://fonts.googleapis.com/css?family=Noto+Sans+KR&display=swap" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/62d9fb1508.js" crossorigin="Lucas"></script>
+	<script type='text/javascript' src='js/jquery-3.3.1.min.js'></script>
+	<script type='text/javascript' src='js/menu.js'></script>
+	<script type='text/javascript' src='js/validar_form.js'></script>
+	<link rel='stylesheet' id='bootstrap-css' href='bootstrap-4/css/bootstrap.css' type='text/css' media='all'/>
+
+</head>
+
+<header>
+    <div class="box">
+        <div class="row-nav">
+            <a href="index.html">
+				<img src="img/uff.jpg" href="index.html" title="UFF" >
+            </a>
+            <div class="opcoes clear">
+                <div class="hamburguer-bt">
+                    <div class="hamburguer-bt__stripe hamburguer-bt__stripe__top"></div>
+                    <div class="hamburguer-bt__stripe hamburguer-bt__stripe__middle"></div>
+                    <div class="hamburguer-bt__stripe hamburguer-bt__stripe__bottom"></div>
+                </div>
+                <!-- <a target="_blank" title="Facebook"  href="https://www.facebook.com/" alt="Facebook">
+                    <i class="fab fa-facebook-square"></i>
+                </a>
+                <a target="_blank" title="LinkedIn" href="https://www.linkedin.com/" alt="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a> -->
+            </div>
+        </div>
+    </div>
+</header>
+
+<div class="barra"></div>
+
+<div class="menu">
+	<ul>
+		<li><a href="index.html">home</a></li>
+		<li><a href="sobre.html">sobre</a></li>
+		<li><a href="instrutores.html">instrutores</a></li>
+		<li><a href="comentarios.html">comentários</a></li>
+		<li><a href="registro.html">registro</a></li>
+		<li><a href="login.html">login</a></li>
+		<li><a href="tarefas.html">tarefas</a></li>
+	</ul>
+</div>
+<body>
+	<section id="formulario">
+		<div class="box">
+			<h2 class="titulo">Inscrição de matéria</h2>
+			<form name="fvalida">
+				<div class="row">
+					<div class="col-6">
+						<label for="nome">Nome*:</label>
+						<input id="nome" name="nome" type="text" placeholder="Nome da matéria">
+					</div>
+					<div class="col-6">
+						<label for="requisito">Requisitos:</label>
+						<input id="requisitos" name="requisitos" placeholder="Requisitos para o curso"></textarea>
+					</div>
+					<div class="col-6">
+						<label for="ementa">Ementa:</label>
+						<textarea rows="2" cols="30" id="ementa" name="ementa" placeholder="Ementa do curso"></textarea>
+					</div>
+					<div class="col-6">
+						<label for="carga_horaria">Carga horária:</label>
+						<input id="carga_horaria" name="carga_horaria" placeholder="Carga horária, em horas"></input>
+					</div>
+					<div class="col-6">
+						<label for="preco">Preço:</label>
+						<input id="preco" name="preco" placeholder="Preço do curso"></input>
+					</div>
+					<div class="col-6">
+						<button type="submit" name="enviar" onclick="valida_enviar()"><p>Enviar</p></button>
+					</div>
+				</div>
+			</form>
+			
+		</div>
+	</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+</body>
+<footer>
+
+</footer>

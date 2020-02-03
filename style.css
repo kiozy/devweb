@@ -3,7 +3,7 @@ html, div, section, a, p, h1, h2, h3, h4, img, ul, li{
     padding: 0;
 }
 
-#formulario{
+#formulario,{
 	padding-top: 10%;
 }
 
@@ -306,4 +306,24 @@ button p {
     color: #fff;
     font-size: 2.2em;
     text-transform: lowercase;
+}
+
+/* Login */
+.corpo{
+	padding-top: 12% !important;
+}
+
+
+.form-signin {
+	
+    width: 100%;
+    max-width: 330px;
+    padding: 15px;
+    margin: auto;
+	color: white;
+	font-family: 'Roboto Slab', serif;
+	font-size: 1.3em;
+}
+.form-signin input{
+	margin: 3px;
 }
